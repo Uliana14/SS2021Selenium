@@ -29,7 +29,7 @@ public void verifyUserFailedLogInWithIncorrectPassword() {
     WebElement toSignButton = driver.findElement(By.id("kc-login"));
     toSignButton.click();
     String errorMessage = driver.findElement(By.xpath("//span[@class='error-text']")).getAttribute("textContent");
-    Assert.assertTrue(errorMessage!="null", "Error is not displayed");
+    Assert.assertTrue(errorMessage!=null, "Error is not displayed");
     driver.quit();
 }
 
