@@ -4,6 +4,11 @@ import org.testng.annotations.*;
 public class BlogTest extends BaseTest{
 
     @Test
+    public void test(){
+        System.out.println("test");
+    }
+
+    @Test
     public void verifyThatAllLinksAreDisplayed() {
         new HomePage()
                 .loadHomePage()
